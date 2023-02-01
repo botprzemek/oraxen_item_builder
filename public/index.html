@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      @font-face {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: local(''),
+          url('/inter-400.woff2') format('woff2');
+      }
+      @font-face {
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: local(''),
+          url('/inter-700.woff2') format('woff2');
+      }
+      * { font-family: "Inter", sans-serif; }
+      html {
+          position: relative;
+          min-height: 100%;
+      }
+    </style>
   </head>
   <body>
     <noscript>
